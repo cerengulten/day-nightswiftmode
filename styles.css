@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+body.activate{
+    background-color: #333;
+}
+#container{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: #333;
+    border-radius: 50px;
+    border: none;
+}
+#switchbutton{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: #333;
+    border-radius: 50px;
+    border: none;
+}
+#container:hover{
+    cursor: pointer;
+}
+#switchbutton:hover{
+    cursor: pointer;
+}
+
+#container.activate{
+    background: #eee;
+    
+}
+
+#switchbutton.activate{
+    background: #eee;
+}
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+
+#container.activate .toggle:before{
+    left: 110px;
+    background: #333;
+}
